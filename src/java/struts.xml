@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+   <package name="technosoft" namespace="/" extends="struts-default">
+
+        <action name="loadpage">
+            <result>home.jsp</result>
+        </action>
+        <action name="signinlink">
+            <result>signin.jsp</result>
+        </action>
+        <action name="signuplink">
+            <result>signup.jsp</result>
+        </action>
+        <action name="contactlink">
+            <result>contact.jsp</result>
+        </action>
+        
+<action name="signupcode"  class="struts.action.UserActionCode">
+            <result  name="success">signin.jsp</result>
+</action>
+
+<action name="signincode"  class="struts.action.UserActionCode"  method="checkLogin">
+            <result  name="success">Studentdashboard.jsp</result>
+            <result  name="error">signin.jsp</result>
+</action>
+
+<action name="userpwdcode"  class="struts.action.UserActionCode"  method="changePassword">
+            <result  name="success">signin.jsp</result>
+            <result  name="error">Studentpassword.jsp</result>
+            
+</action>
+
+<action name="useracccode"  class="struts.action.UserActionCode"  method="deleteAccount">
+            <result  name="success">home.jsp</result>
+            <result  name="error">StudentAccount.jsp</result>
+</action>
+
+
+
+<action name="pwdsetlink">
+            <result>Studentpassword.jsp</result>
+        </action>
+        
+   <action name="useracclink">
+            <result>StudentAccount.jsp</result>
+        </action>
+        
+<action name="complainlink">
+            <result>Complain.jsp</result>
+        </action>
+
+        <action name="complaincode"
+                class="struts.action.ComplainActionCode">
+            <result name="success">Complain.jsp</result>
+        </action>
+        
+        <action name="updatestatuscode"
+        class="struts.action.ComplainActionCode"
+        method="changeStatus">
+    <result name="success">complainreports.jsp</result>
+</action>
+
+  <action name="ordercode" class="struts.action.OrderActionCode">
+          <result name="success">Products.jsp</result>
+       </action>
+        
+        <action name="deletecomplaincode"
+        class="struts.action.ComplainActionCode"
+        method="deleteComplain">
+    <result name="success">complainreports.jsp</result>
+</action>
+
+<action name="reportslink">
+    <result>complainreports.jsp</result>
+</action>
+<action name="vieworderlink">
+            <result>vieworders.jsp</result>
+        </action>
+
+        
+        
+          <!-- auth person actions -->
+
+        <action name="auth">
+            <result>auth.jsp</result>
+        </action>
+
+        <action name="authsignincode"
+                class="struts.action.AuthActionCode">
+            <result name="success">authDashboard.jsp</result>
+            <result name="error">AuthSignin.jsp</result>
+        </action>
+        
+        <action name="authsigninlink">
+            <result>AuthSignin.jsp</result>
+        </action>
+        
+          <action name="authacclink">
+            <result>authAccount.jsp</result>
+        </action>
+        
+        <action name="authacccode"  class="struts.action.AuthActionCode"  method="deleteauthAccount">
+            <result  name="success">home.jsp</result>
+            <result  name="error">authAccount.jsp</result>
+</action>
+<action name="authpwdsetlink">
+            <result>authpassword.jsp</result>
+        </action>
+        <action name="authpwdcode"  class="struts.action.AuthActionCode"  method="changeauthPassword">
+            <result  name="success">AuthSignin.jsp</result>
+            <result  name="error">authpassword.jsp</result>
+            
+</action>
+
+        
+
+    </package>
+ 
+</struts> 

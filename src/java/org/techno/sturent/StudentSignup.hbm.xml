@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping  package="org.techno.sturent">
+    <class name="StudentSignup"  table="StudentSignup">
+        <id name="uid" /> 
+     <property name="pwd" /> 
+     <property name="fnm" /> 
+     <property name="cont" /> 
+     <property name="mailId" /> 
+     <property name="adharNo" /> 
+     <property name="gender" /> 
+     <property name="photo" /> 
+     <property name="address" /> 
+     <property name="city" /> 
+     <property name="dOB" /> 
+     <property name="time" /> 
+    </class>
+</hibernate-mapping>
