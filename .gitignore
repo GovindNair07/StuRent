@@ -2,3 +2,5 @@ build/
 dist/
 *.class
 *.jar
+nbproject/private/
+.DS_Store
