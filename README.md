@@ -1,9 +1,9 @@
 # 🏠 StuRent - Student Rental Management System
 
 ## 📌 Overview
-StuRent is a Java-based application developed using the Spring Framework that helps students find and manage rental accommodations efficiently. The system allows users to browse rental listings, manage properties, and handle user data through a structured backend.
+StuRent is a Java-based web application developed using Spring, Struts, and Hibernate frameworks. The system helps students find and manage rental accommodations efficiently while allowing administrators to manage properties and users.
 
-This project demonstrates backend development, database integration, and application design using Java, Spring, and MySQL.
+The project demonstrates integration of multiple Java technologies, implementing MVC architecture using Struts, dependency management with Spring, and database operations using Hibernate.
 
 ---
 
@@ -19,28 +19,28 @@ This project demonstrates backend development, database integration, and applica
 
 ## 🛠️ Tech Stack
 - **Language:** Java  
-- **Framework:** Spring Framework  
+- **Frameworks:** Spring Framework, Struts  
+- **ORM:** Hibernate  
 - **Database:** MySQL  
-- **Frontend:** JSP / HTML / CSS  
+- **Frontend:** JSP / HTML / CSS / JavaScript  
 - **Build Tool:** Apache Ant  
 - **IDE:** NetBeans / VS Code  
 
 ---
 
 ## 🏗️ Architecture
-The project follows a layered architecture:
+The project follows MVC (Model–View–Controller) architecture:
 
-- **Presentation Layer:** JSP / UI  
-- **Controller Layer:** Handles user requests  
-- **Service Layer:** Business logic  
-- **DAO Layer:** Database operations  
-- **Database Layer:** MySQL  
+- **Model:** Hibernate entities and database logic  
+- **View:** JSP pages for UI  
+- **Controller:** Struts Action classes handling requests  
+- **Service Layer:** Managed using Spring  
 
 ---
 
 ## 📂 Project Structure
 - `/src` → Java source code  
-- `/web` → Frontend files  
+- `/web` → JSP and frontend files  
 - `/nbproject` → NetBeans configuration  
 - `build.xml` → Ant build file  
 
@@ -57,18 +57,18 @@ The project follows a layered architecture:
 
 ## 💡 Key Concepts Used
 - Core Java & OOP  
-- Spring Framework  
-- JDBC / ORM  
-- MVC architecture  
-- Database connectivity  
+- Spring Framework (dependency management)  
+- Struts (MVC architecture)  
+- Hibernate ORM  
+- JDBC & database connectivity  
 
 ---
 
 ## 🔮 Future Improvements
-- Add payment integration  
+- Convert to Spring Boot (modern architecture)  
 - Improve UI/UX design  
 - Add real-time notifications  
-- Convert to Spring Boot  
+- Implement secure authentication  
 - Deploy on cloud  
 
 ---
